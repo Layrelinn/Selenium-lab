@@ -13,6 +13,8 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
 
     protected WebDriver driver;
+    protected By inputFormsMenu = By.xpath("//a[text()='Input Forms']");
+    protected By simpleFormDemo = By.xpath("//ul[@id='treemenu']//a[text()='Simple Form Demo']");
 
     @BeforeMethod(alwaysRun = true)
     public void beforeMethod() {
