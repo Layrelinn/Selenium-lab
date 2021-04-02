@@ -2,7 +2,7 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LabTest1 extends BaseTest{
+public class CheckSingleInputField extends BaseTest{
 
     private By singleInputField = By.xpath("//input[@id='user-message']");
     private By showMessageButton = By.xpath("//button[text()='Show Message']");
@@ -10,7 +10,7 @@ public class LabTest1 extends BaseTest{
 
     @Test
 
-    public void Tests() {
+    public void SingleInputTest() {
         String expectedText = "Hello, my name is Lika";
 
         find(inputFormsMenu).click();

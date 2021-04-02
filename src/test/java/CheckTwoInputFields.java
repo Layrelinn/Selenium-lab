@@ -1,21 +1,17 @@
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class LabTest2 extends BaseTest {
+public class CheckTwoInputFields extends BaseTest {
 
     private By enterValueA = By.xpath("//input[@id='sum1']");
     private By enterValueB = By.xpath("//input[@id='sum2']");
     private By getTotalButton = By.xpath("//button[text()='Get Total']");
-    private By totalSum = By.xpath("//span[@id='displayvalue']");
+    private By totalSumOutput = By.xpath("//span[@id='displayvalue']");
 
     @Test
 
-    public void Tests() {
+    public void TwoInputsTest() {
 
         int a = 5;
         int b = 12;
@@ -27,7 +23,7 @@ public class LabTest2 extends BaseTest {
         find(enterValueB).sendKeys(String.valueOf(b));
         find(getTotalButton).click();
 
-        int actualResult = Integer.parseInt(find(totalSum).getText());
+        int actualResult = Integer.parseInt(find(totalSumOutput).getText());
 
         Assert.assertEquals(actualResult, expectedResult);
 
