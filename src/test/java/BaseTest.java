@@ -22,7 +22,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.seleniumeasy.com/test/");
-        driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
+//        driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
         closeAdv();
     }
 
@@ -33,7 +33,7 @@ public class BaseTest {
 
     private void closeAdv() {
         try {
-            WebElement exit = new WebDriverWait(driver, 5)
+            WebElement exit = new WebDriverWait(driver, 60)
                     .until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[@id='at-cv-lightbox-close']")));
             exit.click();
 
