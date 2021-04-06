@@ -22,7 +22,7 @@ public class BaseTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.seleniumeasy.com/test/");
-//        driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
+        driver.manage().timeouts().pageLoadTimeout(2, TimeUnit.MINUTES);
         closeAdv();
     }
 
