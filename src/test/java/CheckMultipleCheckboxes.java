@@ -12,7 +12,6 @@ public class CheckMultipleCheckboxes extends BaseTest {
 
 
     @Test
-
     public void CheckboxesSelectionTest() throws InterruptedException {
 
         find(inputFormsMenu).click();

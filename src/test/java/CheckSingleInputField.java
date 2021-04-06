@@ -9,7 +9,6 @@ public class CheckSingleInputField extends BaseTest{
     private By yourMessageOutput = By.xpath("//span[@id='display']");
 
     @Test
-
     public void SingleInputTest() {
         String expectedText = "Hello, my name is Lika";
 

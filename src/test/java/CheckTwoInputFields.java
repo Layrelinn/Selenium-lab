@@ -10,7 +10,6 @@ public class CheckTwoInputFields extends BaseTest {
     private By totalSumOutput = By.xpath("//span[@id='displayvalue']");
 
     @Test
-
     public void TwoInputsTest() {
 
         int a = 5;
